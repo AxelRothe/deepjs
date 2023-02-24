@@ -1,4 +1,4 @@
-import { DeepJS } from '../build/index.js'
+import { DeepJS } from '../dist/index.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
