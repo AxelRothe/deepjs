@@ -2,20 +2,12 @@ import {EventEmitter} from 'events';
 import DeepJSOptions from "./DeepJSOptions";
 import API from "./API";
 
-import { advanced_diversity_analysis, dataset_creation, face_recognition, landmark_recognition, object_scene_recognition, qrcode_detection, lower_third_recognition } from "./modules";
+import modules from "./modules";
 import {VisualMiningModule} from "./VisualMiningModule";
 
 class DeepJS extends EventEmitter {
 
-    static modules = {
-        advanced_diversity_analysis,
-        dataset_creation,
-        face_recognition,
-        landmark_recognition,
-        object_scene_recognition,
-        qrcode_detection,
-        lower_third_recognition
-    }
+    static modules = modules;
 
     private api : API;
 
